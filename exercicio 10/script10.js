@@ -5,12 +5,16 @@ function contar() {
 
     let contador = 1;
 
-
     while(contador <= 10){
-          contador +=1;
-       if (resultado == 0) {
-            mostraresultado.innerHTML += `${contador}, &#9827`;
-        }                                                     
-        
-    } 
+        let numero = contador % 2;
+
+    if (numero == 0) {
+        mostraresultado.innerHTML += `<mark> ${contador}</mark> &#x1F449`;
+
+    }else{
+        mostraresultado.innerHTML += `${contador} &#x1F449`;
+    }
+    contador+=1;
+}
+    mostraresultado.innerHTML += `&#x1F3C1`;
 }
